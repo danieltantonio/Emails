@@ -5,6 +5,126 @@
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <style type="text/css">
+    body {
+      margin: 0!important;
+      padding: 15px;
+      background-color: #fff;
+    }
+    .wrapper {
+      width: 100%;
+      table-layout: fixed;
+    }
+    .inner-wrapper {
+      width: 100%;
+      background-color: #eee;
+      max-width: 670px;
+      margin: 0 auto;
+    }
+    table {
+      border-spacing: 0;
+      font-family: sans-serif;
+      color: #727f80;
+    }
+    .outer-table {
+      width: 100%;
+      max-width: 670px;
+      margin: 0 auto;
+      background-color: #fff;
+    }
+    td {
+      padding: 0;
+    }
+    .header {
+      background-color: #c2c1c1;
+      border-bottom: 3px solid #F4AC45;
+    }
+    p {
+      margin: 0;
+    }
+    .header p {
+      text-align: center;
+      padding: 1%;
+      font-weight: 500;
+      font-size: 11px;
+      text-transform: uppercase;
+    }
+    a {
+      color: #f1f1f1;
+      text-decoration: none;
+    }
+    /* End Outer Table 1 */
+    .main-table-first {
+      width: 100%;
+      max-width: 610px;
+      margin: 0 auto;
+      background-color: #fff;
+      border-radius: 6px;
+      margin-top: 25px;
+    }
+    /* Start logo section */
+    .one-column {
+      text-align: center;
+      font-size: 0;
+      padding: 5px 0 10px 0;
+    }
+    .one-column .section {
+      width: 100%;
+      max-width: 300px;
+      display: inline-block;
+      vertical-align: top;
+    }
+    .one-column .content {
+      font-size: 16px;
+      line-height: 20px;
+      text-align: justify;
+    }
+    .content {
+      width: 100%;
+      padding-top: 20px;
+    }
+    .center {
+      display: table;
+      margin: 0 auto;
+    }
+    img {
+      border: 0;
+    }
+    img .logo {
+      float: left;
+      margin-left: 5%;
+      max-width: 300px !important;
+    }
+    #callout {
+      float: right;
+      margin: 4% 5% 2% 0;
+      height: auto;
+      overflow: hidden;
+    }
+    #callout img {
+      max-width: 50px;
+    }
+    #callout .social {
+      display: inline-flex;
+    }
+    .social {
+      list-style-type: none;
+      margin-top: 1%;
+      padding: 0;
+    }
+    .social li {
+      margin-left: 10px;
+      margin-right: 10px;
+    }
+    .social li img {
+      max-width: 15px;
+      margin-bottom: 0;
+      padding-bottom: 0
+    }
+
+    /* Start outer table image, text, and button */
+
+  </style>
 </head>
 
 <body>
@@ -12,14 +132,14 @@
     <div class="inner-wrapper">
       <table class="outer-table">
         <tr>
-          <td>
+          <td class="header">
             <p><a href="#">Click here to view this email in your browser</a></p>
           </td>
         </tr>
       </table>
-      <table class="first-table">
+      <table class="main-table-first">
         <tr>
-          <td class="header">
+          <td class="one-column">
             <div class="section">
               <table width="100%">
                 <tr>
@@ -215,9 +335,13 @@
               <tr>
                 <td>
                   <img src="./img/logo.png" />
-                  <a href="#"><img src="./img/twitter.png" /></a>
-                  <a href="#"><img src="./img/instagram.png" /></a>
-                  <a href="#"><img src="./img/snapchat.png" /></a>
+                  <div id="callout">
+                    <ul class="social">
+                      <li><a href="#"><img src="./img/twitter.png" /></a></li>
+                      <li><a href="#"><img src="./img/instagram.png" /></a></li>
+                      <li><a href="#"><img src="./img/snapchat.png" /></a></li>
+                    </ul>
+                  </div>
                   <p class="footer">
                     9001 Food Street, Some City, CA 11337 <br />
                     Phone: 1 (234) 567 8910 <br />
