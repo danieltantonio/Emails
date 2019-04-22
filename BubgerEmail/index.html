@@ -62,6 +62,7 @@
       color: #f1f1f1;
       text-decoration: none;
     }
+
     /* End Outer Table 1 */
     .main-table-first {
       width: 100%;
@@ -254,6 +255,15 @@
       border: 0;
     }
 
+    .td-content {
+      width: 100%;
+    }
+
+    .td-content img {
+      width: 65%;
+      padding-left: 100px;
+    }
+
     img .logo {
       float: left;
       margin-left: 5%;
@@ -323,6 +333,27 @@
     .footer a {
       color: red;
     }
+
+    @media screen and (max-width: 400px) {
+      .td-content img {
+        padding-left: 58px;
+      }
+    }
+
+    @media screen and (min-width: 401px) and (max-width: 414px) {
+      .td-content img {
+        padding-left: 65px;
+      }
+    }
+
+    @media screen and (min-width: 1024px) {
+      .header p {
+        font-size: 24px;
+      }
+      .text .center {
+        font-size: 28px;
+      }
+    }
   </style>
 </head>
 
@@ -368,10 +399,11 @@
                 <td class="inner-td">
                   <table class="content">
                     <tr>
-                      <td>
+                      <td class="td-content">
                         <img src="./img/bubger.jpg" class="image-responsive" />
                       </td>
-
+                    </tr>
+                    <tr>
 
                       <td class="text">
                         <p class="h2">More Than a Burger</p>
@@ -401,6 +433,12 @@
                 <td class="inner-td">
                   <table class="content">
                     <tr>
+
+                      <td class="td-content">
+                        <img src="./img/custombubger.jpg" class="image-responsive" />
+                      </td>
+                    </tr>
+                    <tr>
                       <td class="text">
                         <p class="h2">Your Masterpiece</p>
                         <p class="center">
@@ -416,9 +454,7 @@
                         </p>
                       </td>
 
-                      <td>
-                        <img src="./img/custombubger.jpg" class="image-responsive" />
-                      </td>
+
                     </tr>
                   </table>
                 </td>
@@ -433,10 +469,11 @@
                 <td class="inner-td">
                   <table width="100%">
                     <tr>
-                      <td>
+                      <td class="td-content">
                         <img src="./img/vegiebubger.jpg" class="image-responsive" />
                       </td>
-
+</tr>
+<tr>
                       <td class="text">
                         <p class="h2">Love Animals & Bubgers</p>
                         <p class="center">Vegetarians, Vegans, and Meat Lovers
