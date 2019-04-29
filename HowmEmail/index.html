@@ -6,10 +6,12 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="viewport" content="width=device-width ,initial-scale=1" />
   <style type="text/css">
+    @import url('https://fonts.googleapis.com/css?family=Libre+Baskerville');
+
     body {
       margin: 0;
       padding: 0;
-      background: #D3F6DB;
+      background: #554348;
     }
 
     .center {
@@ -25,7 +27,7 @@
     .inner-wrapper {
       width: 100%;
       max-width: 670px;
-      background-color: #FFF8E8;
+      background-color: #fff;
       margin: 0 auto;
     }
 
@@ -48,8 +50,16 @@
       width: 100%;
     }
 
+    .slogan {
+      font-family: 'Libre Baskerville', serif;
+    }
+
+    .slogan-hr {
+      width: 25vh;
+    }
+
     .outer-table {
-      width: 100%;
+      width: 100% ;
       max-width: 670px;
       margin: 0 auto;
     }
@@ -93,7 +103,7 @@
       width: 120px;
     }
 
-   .section {
+    .section { /* Change display to inline-block on mobile */
       width: 100%;
       display: inline-flex;
       margin-top: 15px;
@@ -115,6 +125,44 @@
     .desc-container .content {
       margin-top: 32px;
     }
+
+    .desc-table p {
+      margin-top: 5px;
+      margin-bottom: 10px;
+    }
+
+    .desc-table .h3 {
+      font-weight: bold;
+      text-transform: uppercase;
+      color: #424B54;
+    }
+
+    .desc-table .price {
+      font-size: 20px;
+      font-family: 'Libre Baskerville', serif;
+      color: #7FC29B;
+    }
+
+    .button-container {
+      margin-right: 90px;
+      margin-top: 65px;
+      height: 35px;
+    }
+
+    .btn-holder {
+      font-size: 25px;
+      padding: 9px;
+      border-radius: 25px;
+      color: #fff;
+      background: #4C4B63;
+      text-decoration: none;
+    }
+
+    @media screen and (max-width: 375px) {
+      .wrapper {
+        overflow: hidden;
+      }
+    }
   </style>
 </head>
 
@@ -128,13 +176,6 @@
           </td>
         </tr>
       </table> <!-- End Header -->
-      <table class="outer-table">
-        <tr>
-          <td>
-            <img src="./img/banner.jpg" alt="banner" class="banner" />
-          </td>
-        </tr>
-      </table> <!-- End of banner table -->
       <table class="header-email-text center">
         <tr>
           <td>
@@ -142,13 +183,20 @@
               <tr>
                 <td>
                   <p class="slogan">Homes so affordable, all you could ask is "HOW?".</p>
+                  <hr class="slogan-hr"/>
                 </td>
               </tr>
             </table>
           </td>
         </tr>
       </table> <!-- End of header slogan table -->
-      <hr class="split-hr" />
+      <table class="outer-table">
+        <tr>
+          <td>
+            <img src="./img/banner.jpg" alt="banner" class="banner" />
+          </td>
+        </tr>
+      </table> <!-- End of banner table -->
       <table class="main-table">
         <tr>
           <td>
@@ -211,6 +259,9 @@
                     </div>
 
                   </div> <!-- End of Section 1 of 3 -->
+
+                  <hr />
+
                   <div class="section">
                     <div class="pic-container">
                       <table class="pic">
@@ -265,6 +316,9 @@
                       </table>
                     </div>
                   </div> <!-- End of Section 2 of 3 -->
+
+                  <hr />
+
                   <div class="section">
                     <div class="pic-container">
                       <table class="pic">
@@ -321,6 +375,9 @@
                   </div> <!-- End of Section 3 of 3 -->
                 </td>
               </tr>
+            </table>
+            <table class="call-to-action-table">
+              
             </table>
           </td>
         </tr>
