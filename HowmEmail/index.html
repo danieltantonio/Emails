@@ -10,8 +10,7 @@
 
     body {
       margin: 0;
-      padding: 0;
-      background: #554348;
+      padding: 15px;
     }
 
     .center {
@@ -27,7 +26,7 @@
     .inner-wrapper {
       width: 100%;
       max-width: 670px;
-      background-color: #fff;
+      background: #554348;
       margin: 0 auto;
     }
 
@@ -38,16 +37,20 @@
     }
 
     .header-table {
+      text-align: center;
+      padding: 10px 0px 0 0;
+    }
+
+    .header-table .header {
       width: 100%;
-      max-width: 670px;
+      max-width: 610px;
+      display: inline-block;
+      background: #fff;
+      border-radius: 6px 6px 0 0;
     }
 
     .header-table img {
       width: 75px;
-    }
-
-    .header-email-text {
-      width: 100%;
     }
 
     .slogan {
@@ -59,7 +62,7 @@
     }
 
     .outer-table {
-      width: 100% ;
+      width: 100%;
       max-width: 670px;
       margin: 0 auto;
     }
@@ -67,14 +70,11 @@
     .outer-table img {
       width: 100%;
       max-width: 670px;
+      height: auto;
     }
 
     td {
       padding: 0;
-    }
-
-    .header {
-      background-color: #fff;
     }
 
     p {
@@ -92,6 +92,7 @@
       margin: 0 auto;
       border-radius: 6px;
       margin-top: 25px;
+      margin-bottom: 25px;
       background: #fff;
     }
 
@@ -103,7 +104,8 @@
       width: 120px;
     }
 
-    .section { /* Change display to inline-block on mobile */
+    .section {
+      /* Change display to inline-block on mobile */
       width: 100%;
       display: inline-flex;
       margin-top: 15px;
@@ -158,6 +160,34 @@
       text-decoration: none;
     }
 
+    .outer-table-2 {
+      width: 100%;
+      max-width: 670px !important;
+      background: #fff;
+      /* border-top: 3px solid #000;
+      border-bottom: 3px solid #000; */
+    }
+
+    .call-to-action {
+      width: 100%;
+      max-width: 670px;
+      text-align: center;
+    }
+
+    .cta-text {
+      font-size: 24px;
+      margin-top: 30px;
+      margin-bottom: 30px;
+      color: #4C4B63;
+    }
+
+    .cta-button {
+      margin-top: 30px;
+      margin-bottom: 30px;
+    }
+
+
+
     @media screen and (max-width: 375px) {
       .wrapper {
         overflow: hidden;
@@ -169,27 +199,22 @@
 <body>
   <div class="wrapper">
     <div class="inner-wrapper">
-      <table class="header-table">
-        <tr>
-          <td class="header center">
-            <img src="./img/logo.png" alt="logo" class="logo" />
-          </td>
-        </tr>
-      </table> <!-- End Header -->
-      <table class="header-email-text center">
+      <table class="header-table" width="100%">
         <tr>
           <td>
             <table width="100%">
               <tr>
-                <td>
+                <td class="header center">
+                  <img src="./img/logo.png" alt="logo" class="logo" />
                   <p class="slogan">Homes so affordable, all you could ask is "HOW?".</p>
-                  <hr class="slogan-hr"/>
+                  <hr class="slogan-hr" />
                 </td>
               </tr>
-            </table>
+            </table> <!-- End of header slogan table -->
           </td>
         </tr>
-      </table> <!-- End of header slogan table -->
+      </table> <!-- End Header -->
+
       <table class="outer-table">
         <tr>
           <td>
@@ -376,12 +401,31 @@
                 </td>
               </tr>
             </table>
-            <table class="call-to-action-table">
-              
-            </table>
           </td>
         </tr>
+      </table>
+      </td>
+      </tr>
       </table> <!-- End Main Table -->
+      <table class="outer-table-2">
+        <tr>
+          <td>
+            <table class="call-to-action">
+              <tr>
+                <td>
+                  <p class="cta-text">View and discover more homes around your area</p>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <p class="btn-holder-center cta-button">
+                    <a href="#" class="btn-holder">Find More Homes In Your Area</a>
+                  </p>
+                </td>
+              </tr>
+            </table>
+          </td>
+      </table> <!-- End Outer Table 2 -->
     </div>
   </div>
 </body>
