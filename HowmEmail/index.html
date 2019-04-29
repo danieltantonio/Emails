@@ -46,15 +46,24 @@
       max-width: 610px;
       display: inline-block;
       background: #fff;
+      border-top: 2px solid #E5C2C0;
       border-radius: 6px 6px 0 0;
+      padding-bottom: 24px;
     }
 
     .header-table img {
       width: 75px;
+      float: left;
+      border: 2px solid #E5C2C0;
+      border-radius: 6px 0 0 0;
+      border-top: none;
     }
 
     .slogan {
-      font-family: 'Libre Baskerville', serif;
+      color: #000;
+      font-size: 12px;
+      margin-top: 124px;
+      color: #7FC29B;
     }
 
     .slogan-hr {
@@ -164,8 +173,8 @@
       width: 100%;
       max-width: 670px !important;
       background: #fff;
-      /* border-top: 3px solid #000;
-      border-bottom: 3px solid #000; */
+      border-top: 3px solid #D4F5F5;
+      border-bottom: 3px solid #D4F5F5;
     }
 
     .call-to-action {
@@ -186,11 +195,159 @@
       margin-bottom: 30px;
     }
 
+    .outer-table-3 {
+      margin-top: 30px;
+      width: 100%;
+      max-width: 670px;
+      background: #4C4B63;
+      border-top: 2px solid #7FC29B;
+      border-radius: 6px 6px 0 0;
+    }
 
+    .footer-table {
+      width: 100%;
+      margin-top: 32px;
+    }
 
-    @media screen and (max-width: 375px) {
+    .footer-header-table {
+      width: 100%;
+    }
+
+    .footer-header {
+      color: #fff;
+      text-align: center;
+    }
+
+    .footer-header .heart {
+      color: red;
+    }
+
+    .footer-logo-table {
+      float: left;
+    }
+
+    .footer-logo {
+      width: 67px;
+    }
+
+    .footer-social-table {
+      width: 100%;
+      text-align: center;
+    }
+
+    .social-list {
+      display: inline-flex;
+      list-style: none;
+    }
+
+    .social-list li {
+      margin-left: 10px;
+      margin-right: 10px;
+    }
+
+    .social-list img {
+      width: 55px;
+    }
+
+    .footer-text-table {
+      float: right;
+      text-align: right;
+      margin-top: 25px;
+    }
+
+    .footer {
+      font-size: 12px;
+      color: #fff;
+    }
+
+    .footer a {
+      text-transform: uppercase;
+      color: red;
+    }
+
+    @media screen and (max-width: 360px) {
+      .cta-button .btn-holder {
+        font-size: 18px !important;
+      }
+
+      .footer-social-table {
+        width: 100%;
+      }
+
+      .social-list img {
+        width: 50px;
+      }
+    }
+
+    @media screen and (max-width: 414px) {
       .wrapper {
         overflow: hidden;
+      }
+
+      .section {
+        display: inline-block;
+        margin: 0;
+        margin-top: 15px;
+        text-align: center;
+      }
+
+      .pic .content {
+        width: 100%;
+      }
+
+      .section .home {
+        width: 65%;
+      }
+
+      .desc-container {
+        width: 100%;
+      }
+
+      .desc-table {
+        margin: 0 auto;
+      }
+
+      .desc-table .h3 {
+        font-size: 20px;
+      }
+
+      .desc-table .price {
+        font-size: 24px;
+      }
+
+      .desc-table .address, .size {
+        font-size: 20px;
+      }
+
+      .section .button-container {
+        margin-top: 25px;
+        margin-bottom: 25px;
+        width: 100%;
+      }
+
+      .button-container .button-table {
+        margin: 0 auto;
+        padding-bottom: 25px;
+      }
+
+      .outer-table-2 {
+        width: 100%;
+      }
+
+      .cta-button .btn-holder {
+        font-size: 23px;
+      }
+
+      .outer-table-3 {
+        width: 100%;
+      }
+
+      .footer-social-table {
+        width: 100%;
+      }
+
+      .social-list {
+        padding: 0;
       }
     }
   </style>
@@ -251,7 +408,7 @@
                           <td>
                             <table class="content">
                               <tr>
-                                <td>
+                                <td class="desc-td">
                                   <p class="h3">For Sale</p>
                                   <p class="price">$120,000</p>
                                   <p class="address">83 N Hipster St</p>
@@ -403,9 +560,6 @@
             </table>
           </td>
         </tr>
-      </table>
-      </td>
-      </tr>
       </table> <!-- End Main Table -->
       <table class="outer-table-2">
         <tr>
@@ -426,6 +580,65 @@
             </table>
           </td>
       </table> <!-- End Outer Table 2 -->
+      <table class="outer-table-3">
+        <tr>
+          <td>
+            <table class="footer-table">
+              <tr>
+                <td>
+                  <table class="footer-header-table">
+                    <tr>
+                      <td>
+                        <p class="footer-header">
+                          Let's Be Friends ~ <span class="heart">&hearts;</span>
+                        </p>
+                      </td>
+                    </tr>
+                  </table>
+                  <table class="footer-social-table">
+                    <tr>
+                      <td>
+                        <ul class="social-list">
+                          <li>
+                            <a href="#"><img src="./img/social-1.png"  alt="messenger"  /></a>
+                          </li>
+                          <li>
+                            <a href="#"><img src="./img/social-2.png"  alt="snapchat"/></a>
+                          </li>
+                          <li>
+                            <a href="#"><img src="./img/social-3.png"  alt="twitter"/></a>
+                          </li>
+                          <li>
+                            <a href="#"><img src="./img/social-4.png"  alt="instagram"/></a>
+                          </li>
+                        </ul>
+                      </td>
+                    </tr>
+                  </table>
+                  <table class="footer-logo-table">
+                    <tr>
+                      <td>
+                        <img src="./img/logo.png" alt="logo" class="footer-logo" />
+                      </td>
+                    </tr>
+                  </table>
+                  <table class="footer-text-table">
+                    <tr>
+                      <td>
+                        <p class="footer">
+                          9001 Home Rd. Townsville, CA, 11337<br />
+                          &copy; HOW?M, 2019 <br />
+                          <a href="#" alt="Unsubscribe">Unsubscribe</a>
+                        </p>
+                      </td>
+                    </tr>
+                  </table>
+                </td>
+              </tr>
+            </table>
+          </td>
+        </tr>
+      </table> <!-- End Outer Table 3 -->
     </div>
   </div>
 </body>
