@@ -37,18 +37,18 @@
     }
 
     .header-table {
-      text-align: center;
-      padding: 10px 0px 0 0;
+      text-align: center !important;
+      padding: 10px 0px 0 0 !important;
     }
 
     .header-table .header {
-      width: 100%;
-      max-width: 610px;
-      display: inline-block;
-      background: #fff;
-      border-top: 2px solid #E5C2C0;
-      border-radius: 6px 6px 0 0;
-      padding-bottom: 24px;
+      width: 100% !important;
+      max-width: 610px !important;
+      display: inline-block !important;
+      background: #fff !important;
+      border-top: 2px solid #E5C2C0 !important;
+      border-radius: 6px 6px 0 0 !important;
+      padding-bottom: 24px !important;
     }
 
     .header-table img {
@@ -96,13 +96,13 @@
     }
 
     .main-table {
-      width: 100%;
-      max-width: 610px;
-      margin: 0 auto;
-      border-radius: 6px;
-      margin-top: 25px;
-      margin-bottom: 25px;
-      background: #fff;
+      width: 100% !important;
+      max-width: 610px !important;
+      margin: 0 auto !important;
+      border-radius: 6px !important;
+      margin-top: 25px !important;
+      margin-bottom: 25px !important;
+      background: #fff !important;
     }
 
     .three-column {
@@ -169,8 +169,12 @@
       text-decoration: none;
     }
 
+    .main-table-hr {
+      width:50% !important;
+    }
+
     .outer-table-2 {
-      width: 100%;
+      width: 100% !important;
       max-width: 670px !important;
       background: #fff;
       border-top: 3px solid #D4F5F5;
@@ -196,26 +200,26 @@
     }
 
     .outer-table-3 {
-      margin-top: 30px;
-      width: 100%;
-      max-width: 670px;
-      background: #4C4B63;
-      border-top: 2px solid #7FC29B;
-      border-radius: 6px 6px 0 0;
+      margin-top: 30px !important;
+      width: 100% !important;
+      max-width: 670px !important;
+      background: #4C4B63 !important;
+      border-top: 2px solid #7FC29B !important;
+      border-radius: 6px 6px 0 0 !important;
     }
 
     .footer-table {
-      width: 100%;
-      margin-top: 32px;
+      width: 100% !important;
+      margin-top: 32px !important;
     }
 
     .footer-header-table {
-      width: 100%;
+      width: 100% !important;
     }
 
     .footer-header {
       color: #fff;
-      text-align: center;
+      text-align: center !important;
     }
 
     .footer-header .heart {
@@ -223,6 +227,7 @@
     }
 
     .footer-logo-table {
+      margin-top: 5px !important;
       float: left;
     }
 
@@ -258,6 +263,7 @@
     .footer {
       font-size: 12px;
       color: #fff;
+      margin-top: 23px;
     }
 
     .footer a {
@@ -265,89 +271,79 @@
       color: red;
     }
 
-    @media screen and (max-width: 360px) {
+    @media screen and (max-width: 412px) {
+      .wrapper {
+        overflow: hidden !important;
+      }
+
+      .section {
+        display: inline-block !important;
+        margin: 0 !important;
+        margin-top: 15px !important;
+        text-align: center !important;
+      }
+
+      .pic .content {
+        width: 100% !important;
+      }
+
+      .section .home {
+        width: 65% !important;
+      }
+
+      .desc-container {
+        width: 100% !important;
+      }
+
+      .desc-table {
+        margin: 0 auto !important;
+      }
+
+      .desc-table .h3 {
+        font-size: 20px !important;
+      }
+
+      .desc-table .price {
+        font-size: 24px !important;
+      }
+
+      .desc-table .address, .size {
+        font-size: 20px !important;
+      }
+
+      .section .button-container {
+        margin-top: 25px !important;
+        margin-bottom: 25px !important;
+        width: 100% !important;
+      }
+
+      .button-container .button-table {
+        margin: 0 auto !important;
+        padding-bottom: 25px !important;
+      }
+
+      .outer-table-2 {
+        width: 100% !important;
+      }
+
       .cta-button .btn-holder {
         font-size: 18px !important;
       }
 
-      .footer-social-table {
-        width: 100%;
-      }
-
-      .social-list img {
-        width: 50px;
-      }
-    }
-
-    @media screen and (max-width: 414px) {
-      .wrapper {
-        overflow: hidden;
-      }
-
-      .section {
-        display: inline-block;
-        margin: 0;
-        margin-top: 15px;
-        text-align: center;
-      }
-
-      .pic .content {
-        width: 100%;
-      }
-
-      .section .home {
-        width: 65%;
-      }
-
-      .desc-container {
-        width: 100%;
-      }
-
-      .desc-table {
-        margin: 0 auto;
-      }
-
-      .desc-table .h3 {
-        font-size: 20px;
-      }
-
-      .desc-table .price {
-        font-size: 24px;
-      }
-
-      .desc-table .address, .size {
-        font-size: 20px;
-      }
-
-      .section .button-container {
-        margin-top: 25px;
-        margin-bottom: 25px;
-        width: 100%;
-      }
-
-      .button-container .button-table {
-        margin: 0 auto;
-        padding-bottom: 25px;
-      }
-
-      .outer-table-2 {
-        width: 100%;
-      }
-
-      .cta-button .btn-holder {
-        font-size: 23px;
-      }
-
       .outer-table-3 {
-        width: 100%;
+        width: 100% !important;
       }
 
       .footer-social-table {
-        width: 100%;
+        width: 100% !important;
       }
 
       .social-list {
-        padding: 0;
+        padding: 0 !important;
+      }
+
+      .social-list img {
+        width: 50px !important;
       }
     }
   </style>
@@ -362,7 +358,7 @@
             <table width="100%">
               <tr>
                 <td class="header center">
-                  <img src="./img/logo.png" alt="logo" class="logo" />
+                  <img src="https://www.dropbox.com/s/r04n9owzi49tj2z/logo.png?raw=1" alt="logo" class="logo" />
                   <p class="slogan">Homes so affordable, all you could ask is "HOW?".</p>
                   <hr class="slogan-hr" />
                 </td>
@@ -375,7 +371,7 @@
       <table class="outer-table">
         <tr>
           <td>
-            <img src="./img/banner.jpg" alt="banner" class="banner" />
+            <img src="https://www.dropbox.com/s/w4oyf86d3vioryq/banner.jpg?raw=1" alt="banner" class="banner" />
           </td>
         </tr>
       </table> <!-- End of banner table -->
@@ -393,7 +389,7 @@
                             <table class="content">
                               <tr>
                                 <td>
-                                  <img src="./img/home-1.jpeg" class="home" alt="home-1" />
+                                  <img src="https://www.dropbox.com/s/5q99jm6lltqq9mx/home-1.jpeg?raw=1" class="home" alt="home-1" />
                                 </td>
                               </tr>
                             </table>
@@ -442,7 +438,7 @@
 
                   </div> <!-- End of Section 1 of 3 -->
 
-                  <hr />
+                  <hr class="main-table-hr"/>
 
                   <div class="section">
                     <div class="pic-container">
@@ -452,7 +448,7 @@
                             <table class="content">
                               <tr>
                                 <td>
-                                  <img src="./img/home-2.jpeg" class="home" alt="home-1" />
+                                  <img src="https://www.dropbox.com/s/4b5wvo86luib8tb/home-2.jpeg?raw=1" class="home" alt="home-1" />
                                 </td>
                               </tr>
                             </table>
@@ -499,7 +495,7 @@
                     </div>
                   </div> <!-- End of Section 2 of 3 -->
 
-                  <hr />
+                  <hr class="main-table-hr"/>
 
                   <div class="section">
                     <div class="pic-container">
@@ -509,7 +505,7 @@
                             <table class="content">
                               <tr>
                                 <td>
-                                  <img src="./img/home-3.jpg" class="home" alt="home-1" />
+                                  <img src="https://www.dropbox.com/s/ob0rr0ucmolbg9o/home-3.jpg?raw=1" class="home" alt="home-1" />
                                 </td>
                               </tr>
                             </table>
@@ -600,16 +596,16 @@
                       <td>
                         <ul class="social-list">
                           <li>
-                            <a href="#"><img src="./img/social-1.png"  alt="messenger"  /></a>
+                            <a href="#"><img src="https://www.dropbox.com/s/ln8j9srrfk37qi1/social-1.png?raw=1"  alt="messenger"  /></a>
                           </li>
                           <li>
-                            <a href="#"><img src="./img/social-2.png"  alt="snapchat"/></a>
+                            <a href="#"><img src="https://www.dropbox.com/s/83e4jmf5il2igth/social-2.png?raw=1"  alt="snapchat"/></a>
                           </li>
                           <li>
-                            <a href="#"><img src="./img/social-3.png"  alt="twitter"/></a>
+                            <a href="#"><img src="https://www.dropbox.com/s/s6i825iqh0m641d/social-3.png?raw=1"  alt="twitter"/></a>
                           </li>
                           <li>
-                            <a href="#"><img src="./img/social-4.png"  alt="instagram"/></a>
+                            <a href="#"><img src="https://www.dropbox.com/s/f4bajuizwmh1gof/social-4.png?raw=1"  alt="instagram"/></a>
                           </li>
                         </ul>
                       </td>
@@ -618,7 +614,7 @@
                   <table class="footer-logo-table">
                     <tr>
                       <td>
-                        <img src="./img/logo.png" alt="logo" class="footer-logo" />
+                        <a href="#"><img src="https://www.dropbox.com/s/r04n9owzi49tj2z/logo.png?raw=1" alt="logo" class="footer-logo" /></a>
                       </td>
                     </tr>
                   </table>
