@@ -6,12 +6,63 @@
   <meta name="viewport" content="width=device-width, intial-scale=1" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <style type="text/css">
-  @import url('https://fonts.googleapis.com/css?family=Nixie+One|Oswald');
+    @import url('https://fonts.googleapis.com/css?family=Nixie+One|Oswald');
+
+    @media screen and (min-width: 320px) {
+      .header-text {
+        font-size: 12px !important;
+      }
+
+      .banner-text-desc {
+        font-size: 20px !important;
+      }
+
+      .h3 {
+        font-size: 20px !important;
+      }
+
+      .h2 {
+        font-size: 14px !important;
+      }
+
+      .social-plug {
+        width: 60% !important;
+      }
+    }
+
+    @media screen and (min-width: 961px) {
+      .banner-text-desc {
+        font-size: 20px !important;
+      }
+
+      .h3 {
+        font-size: 20px !important;
+      }
+
+      .h2 {
+        font-size: 24px !important;
+      }
+
+      .social-plug {
+        width: 60% !important;
+      }
+    }
   </style>
 </head>
 
-<body style="margin: 0; padding: 0;">
+<body style="margin: 0; padding: 0; background: white;">
   <table class="body-table" width="100%" cellpadding="0" cellspacing="0">
+    <tr>
+      <td>
+        <table class="main-header" style="display:none;">
+          <tr>
+            <td>
+              The secret to fighting world hunger... is with love. &hearts;
+            </td>
+          </tr>
+        </table>
+      </td>
+    </tr>
     <tr>
       <td>
         <table class="main-table" width="600" cellpadding="0" cellspacing="0" border-collapse="collapse" align="center">
@@ -19,8 +70,8 @@
             <td>
               <table class="header-table" width="100%" cellpadding="0" cellspacing="0">
                 <tr>
-                  <td bgcolor="#5b5b5b" align="center" style="border-bottom: 2px solid #FCD116;">
-                    <a class="header-text" href="#" style="color: #fff; text-decoration: none; font-family: sans-serif; font-size:18px; text-transform: uppercase; ">If Images Don't Load Click Here To View In Your Browser</a>
+                  <td bgcolor="#5b5b5b" align="center" style="border-bottom: 2px solid #FCD116; padding-bottom: 6px;">
+                    <a class="header-text" href="#" style="color: #fff; text-decoration: none; font-family: sans-serif; font-size:12px; text-transform: uppercase; ">If Images Don't Load Click Here To View In Your Browser</a>
                   </td>
                 </tr>
                 <tr>
@@ -36,12 +87,19 @@
               <table class="content-table" width="100%" cellpadding="0" cellspacing="0" align="center" style="text-align: center;">
                 <tr>
                   <td>
-                    <img alt="banner" class="banner-img" src="https://www.dropbox.com/s/nwri12hf6e2h36w/banner.png?raw=1" width="100%" style="display: block; padding:0; height: 45%" />
-                  </td>
-                </tr>
-                <tr>
-                  <td>
-                    <table class="banner-text-table" style="position: absolute; top: 650px; text-align: center; width: 600px; color: #787878;">
+                    <table class="banner-text-table" width="100%"
+                      style="background: url('https://www.dropbox.com/s/nwri12hf6e2h36w/banner.png?raw=1') center center no-repeat; background-size: cover; background-position: fixed; height: 120vh; color: #787878 !important;">
+                      <tr>
+                        <td>
+                          <table height="400vh">
+                            <tr>
+                              <td>
+                                &nbsp;
+                              </td>
+                            </tr>
+                          </table>
+                        </td>
+                      </tr>
                       <tr>
                         <td>
                           <table class="banner-text-inner-table" align="center" style="width: 500px;">
@@ -73,7 +131,7 @@
                             <tr>
                               <td>
                                 <p class="btn-holder-center" style="margin-top: 35px;">
-                                  <a href="#" class="btn-holder" style="text-decoration: none; color:#b2cede; border:2px solid #b2cede; padding: 20px; font-family: 'Oswald', sans-serif; font-size: 40px;">Take Action</a>
+                                  <a href="#" class="btn-holder" style="text-decoration: none; color:#b2cede; border:2px solid #b2cede; padding: 12px;; font-family: 'Oswald', sans-serif; font-size: 40px;">Take Action</a>
                                 </p>
                               </td>
                             </tr>
@@ -89,7 +147,7 @@
                       <tr>
                         <td>
                           <p class="h3 call-to-action-header" style="text-transform: uppercase; font-family: 'Oswald', sans-serif; font-size: 32px; font-weight: bold; color: #787878;">
-                            Feed and Educated the Future of the Philippines <br />
+                            Feed and Educate the Future of the Philippines <br />
                             <span class="price" style="color: #FCD116; font-size: 42px;">$1000</span>
                           </p>
                         </td>
@@ -97,7 +155,7 @@
                       <tr>
                         <td>
                           <p class="btn-holder-center" style="font-size: 42px;">
-                            <a href="#" class="btn-holder" style="text-decoration: none; color: #787878; font-family: 'Oswald', sans-serif; border: 2px solid #787878; padding: 20px;">Donate Now</a>
+                            <a href="#" class="btn-holder" style="text-decoration: none; color: #787878; font-family: 'Oswald', sans-serif; border: 2px solid #787878; padding: 12px;;">Donate Now</a>
                           </p>
                         </td>
                       </tr>
@@ -119,12 +177,25 @@
                   </td>
                 </tr>
                 <tr>
-                  <td align="center">
-                    <a href="#"><img alt="facebook" class="social-plug" src="https://www.dropbox.com/s/g15v0fzwtxa8ziu/sm-facebook.png?raw=1" style="width: 15%; margin-left: 10px; margin-right: 10px;" /></a>
-                    <a href="#"><img alt="instagram" class="social-plug" src="https://www.dropbox.com/s/tlasovb4lpicubt/sm-instagram.png?raw=1" style="width: 15%; margin-left: 10px; margin-right: 10px;" /></a>
-                    <a href="#"><img alt="twitter" class="social-plug" src="https://www.dropbox.com/s/hnjhnd0sokyipy5/sm-twitter.png?raw=1" style="width: 15%; margin-left: 10px; margin-right: 10px;" /></a>
-                    <a href="#"><img alt="snapchat" class="social-plug" src="https://www.dropbox.com/s/6xp5ompv0mkso4o/sm-snapchat.png?raw=1" style="width: 15%; margin-left: 10px; margin-right: 10px;" /></a>
-                    <a href="#"><img alt="youtube" class="social-plug" src="https://www.dropbox.com/s/ssnt8koeoa39il1/sm-youtube.png?raw=1" style="width: 15%; margin-left: 10px; margin-right: 10px;" /></a>
+                  <td>
+                    <table class="social-plug-table" width="100%" cellpadding="0" cellspacing="0" align="center">
+                      <tr>
+                        <td class="social-plug-item" align="center">
+                          <a href="#"><img alt="facebook" class="social-plug" src="https://www.dropbox.com/s/g15v0fzwtxa8ziu/sm-facebook.png?raw=1" style="width: 15%; margin-left: 10px; margin-right: 10px;" /></a>
+                        </td>
+                        <td class="social-plug-item" align="center">
+                          <a href="#"><img alt="instagram" class="social-plug" src="https://www.dropbox.com/s/tlasovb4lpicubt/sm-instagram.png?raw=1" style="width: 15%; margin-left: 10px; margin-right: 10px;" /></a>
+                        </td>
+                        <td class="social-plug-item" align="center">
+                          <a href="#"><img alt="twitter" class="social-plug" src="https://www.dropbox.com/s/hnjhnd0sokyipy5/sm-twitter.png?raw=1" style="width: 15%; margin-left: 10px; margin-right: 10px;" /></a>
+                        </td>
+                        <td class="social-plug-item" align="center">
+                          <a href="#"><img alt="snapchat" class="social-plug" src="https://www.dropbox.com/s/6xp5ompv0mkso4o/sm-snapchat.png?raw=1" style="width: 15%; margin-left: 10px; margin-right: 10px;" /></a>
+                        <td class="social-plug-item" align="center">
+                          <a href="#"><img alt="youtube" class="social-plug" src="https://www.dropbox.com/s/ssnt8koeoa39il1/sm-youtube.png?raw=1" style="width: 15%; margin-left: 10px; margin-right: 10px;" /></a>
+                        </td>
+                      </tr>
+                    </table>
                   </td>
                 </tr>
                 <tr>
