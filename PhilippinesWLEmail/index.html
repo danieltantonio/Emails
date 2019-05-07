@@ -3,91 +3,81 @@
 
 <head>
   <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, intial-scale=1" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
   <style type="text/css">
-    @import url('https://fonts.googleapis.com/css?family=Nixie+One|Oswald');
-
-
-    @media screen and (max-width: 412px) {
-      .body {
-        max-width: 412px !important;
-      }
-
-      .main-table {
-        max-width: 412px;
-      }
-
-      .banner-img {
-        height: 990px !important;
-      }
-      .banner-text-table {
-        padding-top: 90px !important;
-
-      }
-      .banner-text-desc {
-        font-size: 25px !important;
-      }
-    }
+  @import url('https://fonts.googleapis.com/css?family=Nixie+One|Oswald');
   </style>
 </head>
 
 <body style="margin: 0; padding: 0;">
-  <table class="body-table" cellpadding="0" cellspacing="0" width="100%">
+  <table class="body-table" width="100%" cellpadding="0" cellspacing="0">
     <tr>
       <td>
-        <table class="main-table" align="center" cellpadding="0" cellspacing="0" width="600" border-collapse="collapse">
+        <table class="main-table" width="600" cellpadding="0" cellspacing="0" border-collapse="collapse" align="center">
           <tr>
             <td>
-              <table class="header-table" width="100%" max-width="600px" cellpadding="0" cellspacing="0">
+              <table class="header-table" width="100%" cellpadding="0" cellspacing="0">
                 <tr>
-                  <td bgcolor="#5b5b5b" align="center" style="border-bottom: 2px solid #FCD116">
-                    <a class="header-text" href="#" style="color: #fff; text-decoration: none; font-family: sans-serif; font-size:10px; text-transform: uppercase; ">If Images Don't Load Click Here To View In Your Browser</a>
+                  <td bgcolor="#5b5b5b" align="center" style="border-bottom: 2px solid #FCD116;">
+                    <a class="header-text" href="#" style="color: #fff; text-decoration: none; font-family: sans-serif; font-size:18px; text-transform: uppercase; ">If Images Don't Load Click Here To View In Your Browser</a>
                   </td>
                 </tr>
                 <tr>
                   <td align="center" style="padding: 10px 10px 8px 5px">
-                    <img alt="philippines with love" class="logo-header" src="./img/logo-top.png" width="300" style="display: block" />
+                    <img alt="philippines with love" class="logo-header" src="./img/logo-top.png" width="100%" style="display: block" />
                   </td>
                 </tr>
               </table> <!-- End Header Table -->
             </td>
-          </tr>
+          </tr> <!-- End Section 1 -->
           <tr>
             <td>
-              <table class="content-table" cellpadding="0" cellspacing="0">
+              <table class="content-table" width="100%" cellpadding="0" cellspacing="0" align="center" style="text-align: center;">
                 <tr>
-                  <td align="center">
-                    <img alt="banner" class="banner-img" src="./img/banner.png" width="100%" style="display: block; margin:0; padding:0;" />
+                  <td>
+                    <img alt="banner" class="banner-img" src="./img/banner.png" width="100%" style="display: block; padding:0; height: 45%" />
                   </td>
                 </tr>
                 <tr>
-                  <td style="position: absolute; top: 550px;" width="597px">
-                    <table align="center" class="banner-text-table" style="color:#585858; text-align: center;">
+                  <td>
+                    <table class="banner-text-table" style="position: absolute; top: 650px; text-align: center; width: 600px; color: #787878;">
                       <tr>
                         <td>
-                          <p class="h1" style="font-size: 24px; font-weight: bold;">
-                            Thanks to you,
-                          </p>
-                        </td>
-                      </tr>
-                      <tr>
-                        <td  width="450px">
-                          <p class="banner-text-desc">
-                            We have managed to help thousands of lives in the Philippines.
-                            You helped feed families, put kids in school, gave people homes, and
-                            progressed the culture and livelihood of the Filipino people. Thank you!
-                            Unfotunately our mission isn't over yet. There are still more people
-                            hungry, and famillies on the street. We've done a lot thanks to your help.
-                            but we're only getting started...
-                          </p>
-                        </td>
-                      </tr>
-                      <tr>
-                        <td>
-                          <p class="btn-holder-center">
-                            <a href="#" class="btn-holder" style="text-decoration: none; color:#b2cede; border:1px solid #b2cede; padding: 10px; font-family: sans-serif;">Take Action</a>
-                          </p>
+                          <table class="banner-text-inner-table" align="center" style="width: 500px;">
+                            <tr>
+                              <td>
+                                <p class="h1" style="font-size: 42px; font-weight: bold; margin-bottom: 0;">
+                                  Thanks to you,
+                                </p>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <table class="paragraph-table" width="100%;" align="center">
+                                  <tr>
+                                    <td>
+                                      <p class="banner-text-desc" style="margin: 0; font-size: 30px;">
+                                        We have managed to help thousands of lives in the Philippines.
+                                        You helped feed families, put kids in school, gave people homes, and
+                                        progressed the culture and livelihood of the Filipino people. You're awesome!
+                                        Unfotunately our mission isn't over yet. There are still people
+                                        hungry, and famillies on the street. We've done a lot thanks to your help.
+                                        but we're only getting started...
+                                      </p>
+                                    </td>
+                                  </tr>
+                                </table>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <p class="btn-holder-center" style="margin-top: 35px;">
+                                  <a href="#" class="btn-holder" style="text-decoration: none; color:#b2cede; border:2px solid #b2cede; padding: 20px; font-family: 'Oswald', sans-serif; font-size: 40px;">Take Action</a>
+                                </p>
+                              </td>
+                            </tr>
+                          </table>
                         </td>
                       </tr>
                     </table> <!-- End Banner Text Table -->
@@ -98,16 +88,16 @@
                     <table class="call-to-action-table" align="center" style="text-align: center">
                       <tr>
                         <td>
-                          <p class="h3 call-to-action-header" style="text-transform: uppercase; font-family: 'Oswald', sans-serif; font-size: 20px; font-weight: bold; color: #787878;">
+                          <p class="h3 call-to-action-header" style="text-transform: uppercase; font-family: 'Oswald', sans-serif; font-size: 32px; font-weight: bold; color: #787878;">
                             Feed and Educated the Future of the Philippines <br />
-                            <span class="price" style="color: #FCD116">$1000</span>
+                            <span class="price" style="color: #FCD116; font-size: 42px;">$1000</span>
                           </p>
                         </td>
                       </tr>
                       <tr>
                         <td>
-                          <p class="btn-holder-center">
-                            <a href="#" class="btn-holder" style="text-decoration: none; color: #787878; font-family: 'Oswald', sans-serif; border: 1px solid #787878; padding: 10px;">Donate Now</a>
+                          <p class="btn-holder-center" style="font-size: 42px;">
+                            <a href="#" class="btn-holder" style="text-decoration: none; color: #787878; font-family: 'Oswald', sans-serif; border: 2px solid #787878; padding: 20px;">Donate Now</a>
                           </p>
                         </td>
                       </tr>
@@ -116,10 +106,10 @@
                 </tr>
               </table> <!-- End Content Table -->
             </td>
-          </tr>
+          </tr> <!-- End Section 2 -->
           <tr>
             <td>
-              <table class="footer-table" align="center">
+              <table class="footer-table" align="center" width="100%">
                 <tr>
                   <td>
                     <p class="h2 footer" style="text-align: center; font-size: 24px; font-family: 'Oswald', sans-serif; text-transform: uppercase; font-weight: bold; color:#B2CEDE;">
@@ -130,24 +120,24 @@
                 </tr>
                 <tr>
                   <td align="center">
-                    <a href="#"><img alt="facebook" class="social-plug" src="./img/sm-facebook.png" style="width: 45px; margin-left: 10px; margin-right: 10px;" /></a>
-                    <a href="#"><img alt="instagram" class="social-plug" src="./img/sm-instagram.png" style="width: 45px; margin-left: 10px; margin-right: 10px;" /></a>
-                    <a href="#"><img alt="twitter" class="social-plug" src="./img/sm-twitter.png" style="width: 45px; margin-left: 10px; margin-right: 10px;" /></a>
-                    <a href="#"><img alt="snapchat" class="social-plug" src="./img/sm-snapchat.png" style="width: 45px; margin-left: 10px; margin-right: 10px;" /></a>
-                    <a href="#"><img alt="youtube" class="social-plug" src="./img/sm-youtube.png" style="width: 45px; margin-left: 10px; margin-right: 10px;" /></a>
+                    <a href="#"><img alt="facebook" class="social-plug" src="./img/sm-facebook.png" style="width: 15%; margin-left: 10px; margin-right: 10px;" /></a>
+                    <a href="#"><img alt="instagram" class="social-plug" src="./img/sm-instagram.png" style="width: 15%; margin-left: 10px; margin-right: 10px;" /></a>
+                    <a href="#"><img alt="twitter" class="social-plug" src="./img/sm-twitter.png" style="width: 15%; margin-left: 10px; margin-right: 10px;" /></a>
+                    <a href="#"><img alt="snapchat" class="social-plug" src="./img/sm-snapchat.png" style="width: 15%; margin-left: 10px; margin-right: 10px;" /></a>
+                    <a href="#"><img alt="youtube" class="social-plug" src="./img/sm-youtube.png" style="width: 15%; margin-left: 10px; margin-right: 10px;" /></a>
                   </td>
                 </tr>
                 <tr>
                   <td align="center">
-                    <a href="#"><img alt="logo" class="footer-logo" src="./img/logo.png" style="width: 50px;" /></a>
+                    <a href="#"><img alt="logo" class="footer-logo" src="./img/logo.png" style="width: 18%;" /></a>
                     <p class="website-plug-text">
-                      <a href="#" class="website-plug" style="color: red; text-decoration: none; font-family: sans-serif; font-size: 12px; font-weight: bold;">phwithlove.com</a>
+                      <a href="#" class="website-plug" style="color: red; text-decoration: none; font-family: sans-serif; font-size: 20px; font-weight: bold;">phwithlove.com</a>
                     </p>
                   </td>
                 </tr>
                 <tr>
                   <td align="center">
-                    <p class="footer" style="font-family: 'Nixie One', sans-serif; text-align: center; font-size: 12px;">
+                    <p class="footer" style="font-family: 'Nixie One', sans-serif; text-align: center; font-size: 18px;">
                       123 Real St. | RealCity, CA | U.S. <br />
                       tel: 1.234.567.8910 | fax: 1.234.567.8910 | email: info@phwithlove.com <br />
                       &copy; philippineswithlove, 2019 <br />
@@ -157,11 +147,11 @@
                 </tr>
               </table> <!-- End Footer Table -->
             </td>
-          </tr>
-        </table> <!-- End Main Table -->
+          </tr> <!-- End Section 3 -->
+        </table>
       </td>
     </tr>
-  </table> <!-- End Body Table -->
+  </table>
 </body>
 
 </html>
